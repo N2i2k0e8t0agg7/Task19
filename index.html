@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact Us</li>
+            <li>About</li>
+        </ul>
+        <div class="user">
+            Username
+            <i class="fa-solid fa-right-from-bracket" id="exit"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="left">
+            <div class="item">
+                <h3>Add Items</h3>
+                <div class="order">
+                    <div class="table">
+                        <p>
+                            <span>S.No.</span>
+                            <span>Service Name</span>
+                        </p>
+                        <p>Price</p>
+                    </div>
+                    <div class="seque">
+                        <p class="mess">No item Added</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="price">
+                    <p>Total Amount</p>
+                    <p class="amount">₹0.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <p class="book">Book Now</p>
+                <form>
+                    <div>
+                        <label>Full Name</label>
+                        <br>
+                        <input type="text" placeholder="Niket Aggarwal">
+                    </div>
+                    <div class="someform">
+                        <span>
+                            <label>Email ID</label>
+                            <br>
+                            <input type="email" placeholder="mail@id">
+                        </span>
+                        <span>
+                            <label>Phone</label>
+                            <br>
+                            <input type="text" placeholder="0000000000">
+                        </span>
+                    </div>
+                </form>
+                <button class="now">Book Now</button>
+                <p class="message"></p>
+            </div>
+        </div>
+        <div class="right">
+            <p class="title">Browse Our Services</p>
+            <p class="subtitle">
+                Click on add button to add service into your cart
+            </p>
+            <hr>
+            <div class="show order">
+                <!-- from js -->
+            </div>
+            <div class="btn">
+                <button class="skip" onclick="nextService()">Skip</button>
+                <button class="add">Add</button>
+            </div>
+            <hr>
+            <p class="footer-text">
+                Add items into cart and click Book Now
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
